@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RGM2Database" Class="linqxmlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=RGM2Database;Integrated Security=True" SettingsObjectName="RGM3.Properties.Settings" SettingsPropertyName="RGM2DatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Trainings" Member="Trainings">
+    <Type Name="Training">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StaffId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoomId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Training_TrainingCustomer" Member="TrainingCustomers" ThisKey="Id" OtherKey="TrainingId" Type="TrainingCustomer" />
+      <Association Name="Room_Training" Member="Room" ThisKey="RoomId" OtherKey="Id" Type="Room" IsForeignKey="true" />
+      <Association Name="Staff_Training" Member="Staff" ThisKey="StaffId" OtherKey="Id" Type="Staff" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.customer" Member="customers">
+    <Type Name="customer">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExpDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="customer_TrainingCustomer" Member="TrainingCustomers" ThisKey="Id" OtherKey="customerId" Type="TrainingCustomer" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Room" Member="Rooms">
+    <Type Name="Room">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Room_Training" Member="Trainings" ThisKey="Id" OtherKey="RoomId" Type="Training" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Staff" Member="Staffs">
+    <Type Name="Staff">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="job" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Staff_Training" Member="Trainings" ThisKey="Id" OtherKey="StaffId" Type="Training" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrainingCustomer" Member="TrainingCustomers">
+    <Type Name="TrainingCustomer">
+      <Column Name="TrainingId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="customerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Training_TrainingCustomer" Member="Training" ThisKey="TrainingId" OtherKey="Id" Type="Training" IsForeignKey="true" />
+      <Association Name="customer_TrainingCustomer" Member="customer" ThisKey="customerId" OtherKey="Id" Type="customer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

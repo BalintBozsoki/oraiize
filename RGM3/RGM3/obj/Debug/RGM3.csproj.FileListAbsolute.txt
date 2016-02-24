@@ -1,0 +1,13 @@
+c:\users\bálint\documents\visual studio 2015\Projects\RGM3\RGM3\bin\Debug\RGM3.exe.config
+c:\users\bálint\documents\visual studio 2015\Projects\RGM3\RGM3\bin\Debug\RGM3.exe
+c:\users\bálint\documents\visual studio 2015\Projects\RGM3\RGM3\bin\Debug\RGM3.pdb
+c:\users\bálint\documents\visual studio 2015\Projects\RGM3\RGM3\obj\Debug\RGM3.csprojResolveAssemblyReference.cache
+c:\users\bálint\documents\visual studio 2015\Projects\RGM3\RGM3\obj\Debug\RGM3.Form1.resources
+c:\users\bálint\documents\visual studio 2015\Projects\RGM3\RGM3\obj\Debug\RGM3.Properties.Resources.resources
+c:\users\bálint\documents\visual studio 2015\Projects\RGM3\RGM3\obj\Debug\RGM3.csproj.GenerateResource.Cache
+c:\users\bálint\documents\visual studio 2015\Projects\RGM3\RGM3\obj\Debug\RGM3.exe
+c:\users\bálint\documents\visual studio 2015\Projects\RGM3\RGM3\obj\Debug\RGM3.pdb
+C:\Users\Bálint\Documents\Visual Studio 2015\Projects\RGM3\RGM3\bin\Debug\hu-HU\RGM3.resources.dll
+C:\Users\Bálint\Documents\Visual Studio 2015\Projects\RGM3\RGM3\obj\Debug\RGM3.Form1.hu-HU.resources
+C:\Users\Bálint\Documents\Visual Studio 2015\Projects\RGM3\RGM3\obj\Debug\hu-HU\RGM3.resources.dll
+C:\Users\Bálint\Documents\Visual Studio 2015\Projects\RGM3\RGM3\obj\Debug\RGM3.login.resources

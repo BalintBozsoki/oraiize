@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="linqxml">
+  <DataContextMoniker Name="/linqxmlDataContext" />
+  <nestedChildShapes>
+    <classShape Id="87305f5e-aacc-4c5a-8402-e4b9613f44c3" absoluteBounds="3.5, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/linqxmlDataContext/Training" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6cc00b18-5cd7-44ed-8792-74d3b8e442f8" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4cd7181b-d7e6-470d-907f-8bf4a4b8e146" absoluteBounds="3.5, 4.125, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/linqxmlDataContext/customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46744c67-c7db-43f1-8048-df6d4dcb96dc" absoluteBounds="3.515, 4.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6ff50583-7bea-4f62-ad42-ecca2d948ad5" absoluteBounds="0.75, 1.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/linqxmlDataContext/Room" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fbe2d01e-9404-44fd-af0d-1e55deb5bc4b" absoluteBounds="0.765, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18062431-fb5e-4cc6-80f7-074a2b1ff268" absoluteBounds="0.75, 4.125, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/linqxmlDataContext/Staff" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81ee0066-f0f8-49fb-ad09-719cbecc9a52" absoluteBounds="0.765, 4.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f1c8bfd7-18dc-408c-88bb-20689681b419" absoluteBounds="6.25, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/linqxmlDataContext/TrainingCustomer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="58f03834-88e5-4c48-9042-3e5320808921" absoluteBounds="6.265, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.81814697265625); (3.04166666666667 : 1.81814697265625 : JumpStart); (3.20833333333333 : 1.81814697265625 : JumpEnd); (3.5 : 1.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqxmlDataContext/Room/Room_Training" />
+      <nodes>
+        <classShapeMoniker Id="6ff50583-7bea-4f62-ad42-ecca2d948ad5" />
+        <classShapeMoniker Id="87305f5e-aacc-4c5a-8402-e4b9613f44c3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.125); (3.125 : 3.75); (3.125 : 1.31532148632813); (3.5 : 1.31532148632813)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqxmlDataContext/Staff/Staff_Training" />
+      <nodes>
+        <classShapeMoniker Id="18062431-fb5e-4cc6-80f7-074a2b1ff268" />
+        <classShapeMoniker Id="87305f5e-aacc-4c5a-8402-e4b9613f44c3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.84699625651042); (6.25 : 1.84699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/linqxmlDataContext/Training/Training_TrainingCustomer" />
+      <nodes>
+        <classShapeMoniker Id="87305f5e-aacc-4c5a-8402-e4b9613f44c3" />
+        <classShapeMoniker Id="f1c8bfd7-18dc-408c-88bb-20689681b419" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.0425439453125); (7.03125 : 5.0425439453125); (7.03125 : 2.44399251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqxmlDataContext/customer/customer_TrainingCustomer" />
+      <nodes>
+        <classShapeMoniker Id="4cd7181b-d7e6-470d-907f-8bf4a4b8e146" />
+        <classShapeMoniker Id="f1c8bfd7-18dc-408c-88bb-20689681b419" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a5d41969-5de7-4b4d-aa31-3a3b4c54b9ca" absoluteBounds="7.875, 3.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/linqxmlDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d023f236-7247-4e87-9f1a-dad0627f347e" absoluteBounds="7.8900000000000006, 3.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

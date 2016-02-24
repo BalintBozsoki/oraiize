@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RGM3", "RGM3\RGM3.csproj", "{681A3B19-96A2-4AF0-9AA6-99B90CFED784}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "RGM2Database", "..\RGM2\RGM2Database\RGM2Database.sqlproj", "{1FD9797D-6D3C-439D-9435-92FB6C37B70C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{681A3B19-96A2-4AF0-9AA6-99B90CFED784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{681A3B19-96A2-4AF0-9AA6-99B90CFED784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{681A3B19-96A2-4AF0-9AA6-99B90CFED784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{681A3B19-96A2-4AF0-9AA6-99B90CFED784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FD9797D-6D3C-439D-9435-92FB6C37B70C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD9797D-6D3C-439D-9435-92FB6C37B70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD9797D-6D3C-439D-9435-92FB6C37B70C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1FD9797D-6D3C-439D-9435-92FB6C37B70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD9797D-6D3C-439D-9435-92FB6C37B70C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FD9797D-6D3C-439D-9435-92FB6C37B70C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
